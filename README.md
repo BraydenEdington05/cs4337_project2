@@ -60,3 +60,12 @@ gen_map(4, 10,10,M), find_exit(M,A).
 18) Sample Output:
 M = [[f, f, f, w, f, w, f, w|…], [f, f, f, w, f, w, f|…], [f, f, f, w, f, f|…], [f, f, f, f, f|…], [f, f, f, w|…], [f, w, w|…], [f, w|…], [f|…], […|…]|…],
 A = [left, down, down, down, down, down, down, right, down|…]
+
+19) Using sample run2
+basic_map(M), display_map(M), find_exit(M, [down,left,down]).
+20) Verify ouput:
+M = [[w, s, w], [f, f, w], [e, w, w]] .
+
+21) Using sample run
+basic_map(M), display_map(M), find_exit(M, [down,left]).
+22) Verify no solution, so false. is returned
