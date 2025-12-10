@@ -7,6 +7,15 @@ creating the project the first thing I did was make the find exit and find start
 After that I created the movement system so that if I wanted to go left,right,up, and down so I could make that happen. After that I made the recursive function to find the 
 correct pathing to the exit and finally I added extra functions like validating the map and validating the tile allong with creating the recursive function.
 
+Files:
+project2.pl - Solves a maze with this criteria:
+            - An f represents a floor space (empty).
+            - A w represents a wall.
+            - An s represents the start space. There should be exactly one start space.
+            - An e represents an exit. There can be more than one 
+example.pl - Simple test maps 
+test.pl - Creates gen_map/4 for testing
+
 How to run:
 1) Start prolog with command:
 swipl
@@ -46,6 +55,6 @@ Solution = [down, left, down, down, right, right]
 
 17) Run test
 gen_map(4, 10,10,M), find_exit(M,A).
-18) Verify Output:
+18) Sample Output:
 M = [[f, f, f, w, f, w, f, w|…], [f, f, f, w, f, w, f|…], [f, f, f, w, f, f|…], [f, f, f, f, f|…], [f, f, f, w|…], [f, w, w|…], [f, w|…], [f|…], […|…]|…],
 A = [left, down, down, down, down, down, down, right, down|…]
