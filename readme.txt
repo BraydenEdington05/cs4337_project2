@@ -11,8 +11,8 @@ How to run:
 1) Start prolog with command:
 swipl
 2) Load files:
-['project2.pl', 'example (2).pl'].
-3) Run simple_map from example (2).pl:
+['project2.pl', 'example.pl', 'test.pl'].
+3) Run simple_map from example.pl:
 simple_map(M), display_map(M), find_exit(M, Solution).
 4) Verify Solution:
 Solution = [right, right] .
@@ -43,3 +43,9 @@ Solution = [down, left, down]
 basic_map2(M), display_map(M), find_exit(M, Solution).
 16) Verify Solution:
 Solution = [down, left, down, down, right, right]
+
+17) Run test
+gen_map(4, 10,10,M), find_exit(M,A).
+18) Verify Output:
+M = [[f, f, f, w, f, w, f, w|…], [f, f, f, w, f, w, f|…], [f, f, f, w, f, f|…], [f, f, f, f, f|…], [f, f, f, w|…], [f, w, w|…], [f, w|…], [f|…], […|…]|…],
+A = [left, down, down, down, down, down, down, right, down|…]
